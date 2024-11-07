@@ -154,13 +154,13 @@ aside{
 .totop{
 	width:44px;
 	height:44px;
-	background:rgba(38, 70, 83, 1) url(../images/top2x.png) no-repeat;/*background family wrighting way*/
+	background:rgba(38, 70, 83, 1) url(images/top2x.png) no-repeat;/*background family wrighting way*/
 	background-size:200%;
 	background-position:0px 0px;
 }
 
 .totop:hover{
-	background:rgba(38, 70, 83, 1) url(../images/top2x.png) no-repeat;
+	background:rgba(38, 70, 83, 1) url(images/top2x.png) no-repeat;
 	background-size:200%;
 	background-position:-44px 0px;/*go to left making colors changing*/
 }
