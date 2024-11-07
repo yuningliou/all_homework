@@ -1,0 +1,327 @@
+@charset "utf-8";
+/*CSS Document*/
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Noto+Serif+HK:wght@200..900&family=Zen+Maru+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=LXGW+WenKai+Mono+TC&family=Noto+Serif+HK:wght@200..900&family=Rampart+One&family=RocknRoll+One&family=Zen+Maru+Gothic&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	font-family: "Zen Maru Gothic", serif;
+	background-color: rgba(255,250,250);
+}
+
+
+/*header*/
+	header{
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index:200;
+	}
+
+	header aside{
+		width:80%;
+		margin:auto;
+	}
+
+	aside > a1{
+		float:left;
+		display:inline-block;
+		padding-left: 5px;
+		width:38px;
+	}
+
+	aside > a2{
+		float:left;
+		display:inline-block;
+		padding-left: 100px;
+		width:50px;
+	}
+
+	header img{
+		width:300%;
+	}
+
+
+/*nav*/
+	nav{
+		float:right;
+	}
+
+	nav>a{
+		float:right;
+		padding:2em;
+		color:rgba(20,33,61,1);
+		text-decoration:none;
+	}
+
+
+	nav>a:hover{
+		color:rgba(245,235,224,1);
+	}
+
+/*section*/
+	section{
+		position:relative;
+		height:100vh;
+		overflow:hidden;
+		clear:both;	
+		font-family: "Rampart One",serif;
+		text-decoration: none;
+
+	}
+
+	.s_left{
+		position:absolute;
+		left:150px;
+		top:150px;
+		z-index:1000;
+
+		animation-name: ant;
+		animation-duration: 3s;
+		animation-iteration-count: 1;
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+
+
+@keyframes ant{
+  from {
+    left:0px; /*動畫起始*/
+  }
+
+  to {
+  	left:150px
+  }
+}
+
+	}
+
+	.s_left h1{
+		font-size:5em;
+		color:rgba(245,235,224,1);
+		text-decoration: none;
+	}
+
+	.s_right{
+		position:absolute;
+		right:0;
+		width:100%;
+	}
+
+	.s_right img{
+		width:100%;
+	}
+
+/*subtitle*/
+.subtitle h1{
+	color:rgba(214, 204, 194, 1);
+	text-align:center;
+}
+
+/*article*/
+article{
+		display:block;
+		width:85%;
+		height:350px;
+		margin:auto;
+		margin-bottom:40px;
+		}
+
+	.a_left{
+		position:relative;
+		float:left;
+		width:50%;
+		height:100%;
+		}
+
+	.a_left img{
+		float:left;
+		width:100%;
+		height:100%;
+		}
+
+	.b_right{
+		position:relative;
+		float:right;
+		width:50%;
+		height:100%;
+		}
+
+	.b_right img{
+		float:right;
+		width:100%;
+		height:100%;
+		}	
+
+	.c_left{
+		position:relative;
+		float:left;
+		width:50%;
+		height:100%;
+		}
+
+	.c_left img{
+		float:left;
+		width:100%;
+		height:100%;
+		}
+
+	.moreb{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	
+	background:rgba(20, 33, 61, 1);
+	padding:30px;
+	color: rgba(255, 255, 255, 1);
+	
+	opacity:0;
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/* Safari */
+
+	}
+
+	article:hover{
+	cursor:pointer;
+	}
+
+	article:hover .moreb{
+	opacity:1;
+	}
+
+
+.a_right{
+	float:left;
+	width:50%;
+	height:100%;
+	padding:20px;
+	box-sizing: border-box;
+
+	color:rgba(20,33,61,1);
+	box-sizing: border-box;
+	text-align: center;
+
+	border:solid 5px rgba(245, 235, 224, 1);
+	background:rgba(245, 235, 224, 1);
+	
+	transition: border 1.5s, background 0.5s;
+	-webkit-transition: border 1.5s, background 0.5s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/* Safari */
+	}
+
+
+	article:hover .a_right{
+	border:solid 5px rgba(20, 33, 61, 1);
+	background:rgba(255, 255, 255, 1);
+	}
+
+	}
+
+.a_right h1{
+	font-family: "Zen Maru Gothic", sans-serif;
+  	font-weight: 500;
+  	font-style: normal;
+}
+
+.a_right p{
+	font-family:"Zen Maru Gothic", sans-serif;
+  	font-weight: 200;
+ 	font-style: normal;
+}
+
+.b_left{
+	float:left;
+	width:50%;
+	height:100%;
+	padding:20px;
+	box-sizing: border-box;
+
+	color:rgba(20,33,61,1);
+	box-sizing: border-box;
+	text-align: center;
+
+	border:solid 5px rgba(245, 235, 224, 1);
+	background:rgba(245, 235, 224, 1);
+	
+	transition: border 1.5s, background 0.5s;
+	-webkit-transition: border 1.5s, background 0.5s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/* Safari */
+	}
+
+
+	article:hover .a_right{
+	border:solid 5px rgba(20, 33, 61, 1);
+	background:rgba(255, 255, 255, 1);
+	}
+
+	}
+
+.b_left h1{
+	font-family: "Zen Maru Gothic", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+.b_left p{
+	font-family: "Zen Maru Gothic", sans-serif;
+  	font-weight: 400;
+ 	font-style: normal;
+}
+
+.c_right{
+	float:left;
+	width:50%;
+	height:100%;
+	padding:35px;
+	box-sizing: border-box;
+
+	color:rgba(20,33,61,1);
+	box-sizing: border-box;
+	text-align: center;
+
+	border:solid 5px rgba(245, 235, 224, 1);
+	background:rgba(245, 235, 224, 1);
+	
+	transition: border 1.5s, background 0.5s;
+	-webkit-transition: border 1.5s, background 0.5s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/* Safari */
+	}
+
+
+	article:hover .a_right{
+	border:solid 5px rgba(20, 33, 61, 1);
+	background:rgba(255, 255, 255, 1);
+	}
+
+	}
+
+.c_right h1{
+	font-family: "Zen Maru Gothic", sans-serif;
+  	font-weight: 500;
+  	font-style: normal;
+}
+
+.c_right p{
+	font-family: "Zen Maru Gothic", sans-serif;
+  	font-weight: 500;
+ 	font-style: normal;
+}
+
+/*footer*/
+footer{
+	clear:both;/* clear and block float*/
+	text-align:center;
+	color:rgba(214, 204, 194, 1);
+	margin:40px;
+	border:45px;
+}
